@@ -399,22 +399,30 @@ img {
 }
 .home .content-pick .destination .btn {
   background-color: #17A2B8;
-  color: white;
+  color: #FFFFFF;
   font-size: 2rem;
   text-align: center;
   border-radius: 15px;
   padding: 13px 0;
   width: 82%;
+  transition-duration: 200ms;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #117a8b;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     background-color: #17A2B8;
-    color: white;
+    color: #FFFFFF;
     font-size: 2rem;
     text-align: center;
     border-radius: 15px;
     padding: 13px 0;
     width: 100%;
+    transition-duration: 200ms;
+  }
+  .home .content-pick .destination .btn:hover {
+    background-color: #117a8b;
   }
 }
 @media (max-width: 500px) {

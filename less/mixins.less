@@ -8,7 +8,7 @@
     border-top: 2px dashed @navigation-border;
 }
 
-.btnFormat(@btn-bg, @font-color, @font-size, @width) {
+.btnFormat(@btn-bg, @font-color, @font-size, @width, @anim-duration) {
     background-color: @btn-bg;
     color: @font-color;
     font-size: 2rem;
@@ -16,4 +16,8 @@
     border-radius: 15px;
     padding: 13px 0;
     width: @width;
+    transition-duration: @anim-duration;
+    &:hover {
+        background-color: darken(@btn-bg, 10%);
+    }
 }
