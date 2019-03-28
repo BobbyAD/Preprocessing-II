@@ -207,6 +207,10 @@ img {
   font-size: 1.6rem;
   color: #212529;
   padding-right: 31px;
+  transition-duration: 200ms;
+}
+.navigation-container .nav-centering nav a:hover {
+  color: #9ba5ae;
 }
 @media (max-width: 500px) {
   .navigation-container .nav-centering nav a {
@@ -406,6 +410,7 @@ img {
   padding: 13px 0;
   width: 82%;
   transition-duration: 200ms;
+  cursor: pointer;
 }
 .home .content-pick .destination .btn:hover {
   background-color: #117a8b;
@@ -420,6 +425,7 @@ img {
     padding: 13px 0;
     width: 100%;
     transition-duration: 200ms;
+    cursor: pointer;
   }
   .home .content-pick .destination .btn:hover {
     background-color: #117a8b;

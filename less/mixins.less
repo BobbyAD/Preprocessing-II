@@ -17,7 +17,14 @@
     padding: 13px 0;
     width: @width;
     transition-duration: @anim-duration;
+    cursor: pointer;
     &:hover {
         background-color: darken(@btn-bg, 10%);
+    }
+}
+
+.navLighten(@col, @percent) {
+    &:hover {
+        color: lighten(@col, @percent);
     }
 }
