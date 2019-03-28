@@ -1,1 +1,19 @@
 // Mixins in here
+
+.borderBottom {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.borderTop {
+    border-top: 2px dashed @navigation-border;
+}
+
+.btnFormat(@btn-bg, @font-color, @font-size, @width) {
+    background-color: @btn-bg;
+    color: @font-color;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    padding: 13px 0;
+    width: @width;
+}

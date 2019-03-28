@@ -1,1 +1,36 @@
 // Navigation Styles here
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 88px;
+        max-width: 800px;
+        width: 100%;
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            a {
+                text-decoration: none;
+                font-size: 1.6rem;
+                color: @font-color;
+                padding-right: 31px;
+            }
+        }
+    }
+    .borderBottom();
+    background-color: @main-bg;
+}
+
+// Push everything down without doing it in the main class
+.fake-header{
+    height: 88px;
+    visibility: hidden;
+}
