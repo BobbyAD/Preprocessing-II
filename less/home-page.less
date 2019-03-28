@@ -1,35 +1,75 @@
 .home {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
   .top-content-section {
-    margin: 20px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     .borderBottom();
+    @media @tablet {
+      padding: 0 2% 0;
+    }
+    @media @mobile {
+      padding: 0;
+      width: 90%;
+      flex-direction: column;
+      align-content: center;
+    }
+    img {
+      @media @mobile {
+        height: auto;
+      }
+    }
     
     .text-content {
-      margin-bottom: 13px;
+      margin: 20px 0 13px;
     }
   }
 
   .content-section {
-    margin: 30px 0;
+    margin: 30px 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+   @media @tablet {
+     width: 100%;
+     flex-direction: column;
+     align-content: center;
+     margin: 30px 0 0;
+     padding: 0 2% 0;
+   }
+   @media @mobile {
+     padding: 0;
+   }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @tablet {
+        width: 100%;
+      }
+      @media @mobile {
+        width: 90%;
+        padding: 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 90%;
+        padding: 0;
+      }
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -37,6 +77,10 @@
   .inverse-content {
     padding-bottom: 30px;
     .borderBottom();
+    @media @tablet {
+      display: flex;
+      flex-direction: column-reverse;      
+    }
 
     .text-content {
       padding-left: 1%;
@@ -51,7 +95,16 @@
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 30px auto 30px;
+    @media @tablet {
+      width: 100%;
+      padding: 30px 2% 0;
+    }
+    @media @mobile {
+      padding: 0;
+      width: 90%;
+      margin: 30px auto 30px;
+    }
 
     img {
       border-radius: 10px;
@@ -63,12 +116,28 @@
     .borderTop();
     display: flex;
     justify-content: space-between;
+    @media @tablet {
+      padding: 30px 2% 0;
+    }
+    @media @mobile {
+      padding: 30px 0 0;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      width: 90%;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
       .btn {
         .btnFormat(@button-bg, white, 1.6rem, 82%);
+        @media @mobile {
+          .btnFormat(@button-bg, white, 1.6rem, 100%);
+        }
+      }
+      @media @mobile {
+        width: 80%;
       }
     }
   }
