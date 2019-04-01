@@ -1,1 +1,30 @@
 // Mixins in here
+
+.borderBottom {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.borderTop {
+    border-top: 2px dashed @navigation-border;
+}
+
+.btnFormat(@btn-bg, @font-color, @font-size, @width, @anim-duration) {
+    background-color: @btn-bg;
+    color: @font-color;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    padding: 13px 0;
+    width: @width;
+    transition-duration: @anim-duration;
+    cursor: pointer;
+    &:hover {
+        background-color: darken(@btn-bg, 10%);
+    }
+}
+
+.navLighten(@col, @percent) {
+    &:hover {
+        color: lighten(@col, @percent);
+    }
+}
